@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+#container {
+  background-image: url('../components/Landing/assests/header-hero.jpg');
+  height: 100vh;
+  width: 100%;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
